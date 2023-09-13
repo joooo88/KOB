@@ -429,7 +429,7 @@ main #characters .honey_ch .c_detail .bee1 {
   width: 100%;
   display: flex;
   position: relative;
-  padding: 10rem 0 0 20rem;
+  padding: 10rem 0 0 25rem;
 }
 main #characters .honey_ch .c_detail .bee1 .bee1_left {
   display: flex;
@@ -488,7 +488,7 @@ main #characters .honey_ch .c_detail .bee2 {
   display: flex;
   position: relative;
   justify-content: flex-end;
-  padding: 0 25rem 0 0;
+  padding: 0 23rem 0 0;
 }
 main #characters .honey_ch .c_detail .bee2 .bee2_left {
   display: flex;
@@ -546,7 +546,7 @@ main #characters .honey_ch .c_detail .bee3 {
   width: 100%;
   display: flex;
   position: relative;
-  padding: 0 0 0 25rem;
+  padding: 0 0 0 30rem;
 }
 main #characters .honey_ch .c_detail .bee3 .bee3_left {
   display: flex;
