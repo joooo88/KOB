@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>KOB | Kingdom of Bee</title>
+
+  <!--meta-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"> 
+  <meta http-equiv="X-UA-Compatible" content="le=edge">
+
+  <!--bootstrap-->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!--css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/moblie.css">
+
+  <!--favicon--->
+  <link href="img/favicon.ico" rel="icon">
+  <link href="img/favicon.ico" rel="apple-touch-icon">
+
+  <!--js-->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/menu_scroll.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+</head>
+
+
+
+<body>
+
+
+  <header  class="header" >
+
+    <div class="hd_all">
+
+      
+
+      <article>
+        <nav class="pc_menu">
+          <ul class="menu_style">
+            <li><a href="#home" class="scroll"onClick="selectLink(this); return false;">Home</a></li>
+            <li><a href="#story" class="scroll" onClick="selectLink(this); return false;">Story</a></li>
+            <li><a href="#characters" class="scroll" onClick="selectLink(this); return false;">KOB Characters</a></li>
+            <li><a href="#milestones" class="scroll" onClick="selectLink(this); return false;">Milestones</a></li>
+            <li><a href="#contact" class="scroll" onClick="selectLink(this); return false;">Contact</a></li>
+            <li class="lang"><a href="index_eng.html" class="scroll"><div>
+              KOR | <bb> ENG </bb>
+            </div></a></li>
+          </ul>
+        </nav>
+
+        <hgroup>
+
+          <a href="#home">
+            <h1 class="menu_style">
+              <img src="img/KOB logo.png" alt="logo">
+            </h1>
+          </a>
+  
+        </hgroup>
+      </article>
+      
+
+      
+      
+
+     <!--반응형-->
+
+     <div class="m_menu_button">
+
+      <a href="#" class="menu-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+    </div>
+
+     <!--반응형 js-->
+     <script type="text/javascript">
+
+      $(function () {
+        $(".menu-trigger").click(function (e) {
+          e.preventDefault();
+          $(this).toggleClass('active-' + 1);
+        });
+      });
+
+    </script>
+
+    <nav class="m_menu">
+      <ul class="menu_style">
+        <li><a href="#home" class="scroll"onClick="selectLink(this); return false;">Home</a></li>
+          <li><a href="#story" class="scroll" onClick="selectLink(this); return false;">Story</a></li>
+          <li><a href="#characters" class="scroll" onClick="selectLink(this); return false;">KOB Characters</a></li>
+          <li><a href="#milestones" class="scroll" onClick="selectLink(this); return false;">Milestones</a></li>
+          <li><a href="#contact" class="scroll" onClick="selectLink(this); return false;">Contact</a></li>
+        <li class="lang"><a href="index_eng.html" class="scroll"><div>
+          Eng
+        </div></a></li>
+      </ul>
+      
+    </nav>
+
+    <!--반응형 js-->
+    <script type="text/javascript">
+      $(function () {
+        $(".m_menu_button").click(function () {
+          $(".m_menu").animate({ height: "toggle" }, 250);
+        });
+      });
+
+    </script>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- home -->
+    <section id="home">
+
+      <div class="home_bg">
+        <img src="img/home_bg.png">
+      </div>
+
+      <article>
+        <div class="home_txt" >
+          <h1>Kingdom of Bee.</h1>
+          <h2>KOB (Kingdom of Bee)는 <br>
+            이더리움 네트워크상에서 존재하는 디지털 아트 수집품으로써 ERC-721 기술을 사용했습니다.<br>
+            KOB의 캐릭터는 다양한 매력과 직업을 가지고 있으며 각자의 개성을 잘 보여 주고 있습니다.<br>
+            다양한 직업을 가진 캐릭터를 수집하여 자신만의 왕국을 건설해보세요.<br>
+          </h2>
+          <br>
+  
+          <div class="home_btn">
+            <button type="button" onclick="location.href='KOB-Whitepaper.pdf' ">
+              <div>
+                <img src="img/bee2.png"><p>Whitepaper</p>
+              </div>
+            </button>
+            <button type="button" onclick="location.href='' ">
+              <div>
+                <img src="img/bee2.png"><p>Wallet</p>
+              </div>
+            </button>
+          </div>
+        </div>
+  
+        <div class="home_logo">
+          <div class="logo_box">
+            <img class="logoimg" src="img/KOB logo.png">
+            <img class="logoj" src="img/벌집 4.png">
+          </div>
+        </div>
+      </article>
+      
+      
+      
+    </section>
+
+    <!-- story -->
+    <section id="story">
+      <div class="honey_b">
+        <img src="img/honey-hr-white.png">
+      </div>
+
+      <article>
+        <div class="story_text">
+          <h1>Story.</h1>
+          <h3>
+            안드로메다 은하계의 어느 행성.<br><br>
+            이곳에는 다양한 종류의 벌들의 왕국이 존재합니다.<br><br>
+            한번도 겪어보지 못한 극심한 가뭄, 식량난과 더불어 자원 부족에 마주하게 되었습니다.<br><br>
+            그로 인해 평화롭던 왕국들에 어두운 그림자가 드리우기 시작하였으며 이 상황을 벗어 나기 위한 왕국들의 노력의 일환으로 행성의 다른 지역으로 탐사팀을 보낼 계획을 세웁니다.<br><br>
+            탐사팀은 미지의 구역으로 이동하기 시작하는데.
+          </h3>
+        </div>
+
+        <div class="story_c">
+          <ul>
+            <li class="img_float">
+              <img class="q1" src="img/q1.png">
+              <img class="q2" src="img/q2.png">
+              <img class="q3-1" src="img/q3.png">
+              <img class="q3-2" src="img/q3.png">
+              <img class="q4" src="img/q4.png">
+              <img class="q5" src="img/q5.png">
+            </li>
+            <li class="img_fix">
+              <img src="img/story-q.png">
+              <span></span>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- characters -->
+    <section id="characters">
+
+      <article class="honey_bg">
+        <div class="honey_b_c">
+          <img src="img/honey_to.svg">
+        </div>
+        <div class="honey_b_bg">
+          <img src="img/characters_bg_3.png">
+        </div>
+      </article>
+
+      <article class="honey_ch">
+        <div class="c_title">
+          <img src="img/bee.png">
+          <h1>KOB Characters.</h1>
+          <h3>KOB characters는 다양한 직업을 가진 벌들이 존재합니다.<br>
+            지금은 3가지 종류의 벌들이 존재하지만 업데이트로 더 많은 종류의 벌들이 만들어 질 것입니다.</h3>
+        </div>
+
+        <div class="c_detail">
+          <ul class="bee1">
+            <li class="bee1_left">
+              <div class="beeimg"><img src="img/character/bb1.png"></div>
+              <div class="beeimg"><img src="img/character/bb3.png"></div>
+            </li>
+
+
+            <li class="bee1_right">
+              <div class="beeimg"><img src="img/character/bb2.png"></div>
+              <div class="bee1_text">
+                <p>벌</p>
+                <img class="ch1" src="img/chara_1.svg">
+                <img class="ch2" src="img/chara_2.svg">
+              </div>
+            </li>
+            
+          </ul>
+          
+          <ul class="bee2">
+            <li class="bee2_left">
+              <div class="beeimg"><img src="img/character/bh2.png"></div>
+              <div class="bee1_text">
+                <p>호박벌</p>
+                <img class="ch1" src="img/chara_1.svg">
+                <img class="ch3" src="img/bee2.png">
+              </div>
+            </li>
+
+
+            <li class="bee2_right">
+              <div class="beeimg"><img src="img/character/bh1.png"></div>
+              <div class="beeimg"><img src="img/character/bh3.png"></div>
+            </li>
+            
+          </ul>
+
+          <ul class="bee3">
+            <li class="bee3_left">
+              <div class="beeimg"><img src="img/character/bj1.png"></div>
+              <div class="beeimg more2"><img src="img/character/bj3.png"></div>
+            </li>
+
+
+            <li class="bee3_right">
+              <div class="beeimg"><img src="img/character/bj2.png"></div>
+              <div class="bee3_text">
+                <p>장수말벌</p>
+                <img class="ch1" src="img/chara_1.svg">
+                <img class="ch4" src="img/chara_3.svg">
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+
+        <span></span>
+      </article>
+
+      <article class="honey_hiden">
+        <div class="hiden_top">
+          <img src="img/chara_4.svg" >
+          <h3>히든 캐릭터 준비중입니다.</h3>
+        </div>
+
+        <div class="hiden_bottom">
+          <ul>
+            <li class="hi-1">
+              <img src="img/character/hh1.png">
+              <img src="img/character/hh2.png">
+              <img src="img/character/hh3.png">
+            </li>
+            <li class="hi-1">
+              <img src="img/character/hh4.png">
+              <img src="img/character/hh5.png">
+              <img src="img/character/hh6.png">
+            </li>
+            <li class="hi-1">
+              <img src="img/character/hh7.png">
+              <img src="img/character/hh8.png">
+              <img src="img/character/hh9.png">
+            </li>
+            <li class="hi-1">
+              <img src="img/character/hh10.png">
+              <img src="img/character/hh11.png">
+              <img src="img/character/hh12.png">
+            </li>
+          </ul>
+        </div>
+
+        <div class="hiden_box">
+          <h3>파랑띠벌,  황말벌,  흰띠땅벌,  왜알락꽃벌</h3>
+        </div>
+
+        
+      </article>
+      
+      <article class="honey_botoom">
+        <img src="img/honey-hr-white.png">
+      </article>
+      
+    </section>
+
+    <!-- milestones -->
+    <section id="milestones">
+      <article>
+        <div>
+          <h2>Milestones</h2>
+        </div>
+        <div>
+          <ul>
+            <h2>2022</h2>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    
+    <!-- contact -->
+    <section id="contact">
+      <div class="contact_bg">
+        <img src="img/cont_bg.jpg">
+      </div>
+      <div class="cont-title">
+        <h2>Contact</h2>
+      </div>
+      <div class="cont-form">
+        <img src="img/cont_1.svg">
+        <form method="post" onsubmit="return validate();">
+          <input type="text" id="email" placeholder="Email" required>
+          <input class="subm" type="submit" value="SUBMIT" >
+      </form>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer_wrap container">
+      <div class="footer_content">
+        <div class="footer_cont_left">
+          <div class="f_cont_left_logo"><a href="#home"><img src="img/KOB logo w.png" alt="f_logo"></a></div>
+
+          <div class="f_cont_left_info">
+            <h5>KOB Inc.</h5>
+            <p>주소 : </p>
+            <p>대표자 : </p>
+            <!-- <p><span>고객센터 운영시간</span> : (월~금 10am~5pm . 점심12~2pm)</p> -->
+          </div>
+        </div><!-- footer_cont_left -->
+
+
+        <div class="footer_cont_right">
+          <a href="#" class="kakao"><i class="xi-kakaotalk xi-x"></i></a>
+          <a href="#" class="tele"><i class="xi-telegram xi-x"></i></a>
+          <a href="#" class="twitter"><i class="xi-twitter xi-x"></i></a>
+          <a href="#" class="tele"><i class="xi-instagram xi-x"></i></a>
+
+
+        </div>
+      </div><!-- footer_content -->
+    </div><!-- footer_wrap -->
+
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+
+
+</body>
+
+
+</html>
