@@ -378,7 +378,7 @@ main #characters .honey_bg {
 main #characters .honey_bg .honey_b_c {
   width: 100%;
   position: absolute;
-  left: 0;
+  left: -5px;
   top: 0;
   z-index: 1;
 }
@@ -741,6 +741,18 @@ main #milestones article .m_detail .year1 .m_hex .hexagon2 {
   width: 200px;
   transform: translate(6rem, 3rem);
 }
+main #milestones article .m_detail .year1 .m_text {
+  position: relative;
+}
+main #milestones article .m_detail .year1 .m_text .m_line {
+  position: absolute;
+  width: 180px;
+  height: 3px;
+  left: 59rem;
+  top: 4rem;
+  border-bottom: 10px solid #fdc401;
+  border-radius: 50px;
+}
 main #milestones article .m_detail .year1 .m_text .m_bottom p {
   color: #734F38;
   line-height: 2;
@@ -761,6 +773,7 @@ main #milestones article .m_detail .year2 .m_hex .hexagon2 {
   transform: translate(59.5rem, 22rem);
 }
 main #milestones article .m_detail .year2 .m_text {
+  position: relative;
   width: 100%;
 }
 main #milestones article .m_detail .year2 .m_text .m_top {
@@ -772,9 +785,18 @@ main #milestones article .m_detail .year2 .m_text .m_top {
   line-height: 1.5;
 }
 main #milestones article .m_detail .year2 .m_text .m_top p {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
   text-align: right;
   color: #734F38;
+}
+main #milestones article .m_detail .year2 .m_text .m_line {
+  position: absolute;
+  width: 180px;
+  height: 3px;
+  left: 50rem;
+  top: -2rem;
+  border-bottom: 10px solid #fdc401;
+  border-radius: 50px;
 }
 main #milestones article .m_detail .year2 .m_text .m_bottom img {
   width: 70%;
@@ -795,6 +817,18 @@ main #milestones article .m_detail .year3 .m_hex .hon1 {
 main #milestones article .m_detail .year3 .m_hex .hexagon1 {
   width: 200px;
   transform: translate(23rem, 15rem);
+}
+main #milestones article .m_detail .year3 .m_text {
+  position: relative;
+}
+main #milestones article .m_detail .year3 .m_text .m_line {
+  position: absolute;
+  width: 180px;
+  height: 3px;
+  left: 59rem;
+  top: 5rem;
+  border-bottom: 10px solid #fdc401;
+  border-radius: 50px;
 }
 main #milestones article .m_detail .year3 .m_text .m_bottom p {
   color: #734F38;
