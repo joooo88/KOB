@@ -32,7 +32,6 @@ header{
       box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
       backdrop-filter: blur(2.5px);
       article{
-        border-bottom: 2.5px solid #3D210F;
         width: 100%;
         padding: 0 3rem;
         display: flex;
@@ -242,6 +241,7 @@ header{
 /* main */
 
 main{
+
   #home{
     color: #3D210F;
     width: 100vw;
@@ -317,6 +317,7 @@ main{
     
 
   }
+
   #story{
     position: relative;
     width: 100vw;
@@ -324,7 +325,7 @@ main{
     background: #FFD835;
     .honey_b{
       position: absolute;
-      top: -7rem;
+      top: -5rem;
       left: 0;
     }
     article{
@@ -413,6 +414,7 @@ main{
       }
     }
   }
+
   #characters{
     background: linear-gradient(#FFD835, #ffd835);
     width: 100vw;
@@ -707,6 +709,176 @@ main{
       bottom: -3rem;
       img{
         transform: scaleY(-1);
+      }
+    }
+  }
+
+  #milestones{
+    padding: 10rem 0;
+    width: 100%;
+    article{
+      width: 100%;
+      .m_title{
+        padding-top: 2rem;
+        text-align: center;
+        h2{
+          font-size: 3rem;
+          color: #3D210F;
+        }
+      }
+      .m_detail{
+        width: 100%;
+        ul{
+          position: relative;
+          .m_hex{
+            img{
+            }
+          }
+          .m_text{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .m_top{
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              img{
+                width: 70%;
+              }
+              h2{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate( -50%, -50% );
+              }
+              p{
+                color: #734F38;
+              }
+            }
+            .m_line{
+              
+            }
+            .m_bottom{
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              img{
+                width: 170px;
+              }
+              h2{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(15%, 235%);
+              }
+              p{
+                color: #734F38;
+              }
+            }
+          }
+        }
+
+        .year1{
+          position: relative;
+          .m_hex{
+            .hon1{
+              width: 150px;
+              transform: translate(-1rem, 20rem);
+            }
+            .hexagon1{
+              width: 200px;
+              transform: translate(26rem, 15rem);
+            }
+            .hexagon2{
+              width: 200px;
+              transform: translate(6rem, 3rem);
+            }
+          }
+          .m_text{
+            .m_top{
+
+            }
+            .m_bottom{
+              p{
+                color: #734F38;
+                line-height: 2;
+              }
+            }
+          }
+        }
+        .year2{
+          position: relative;
+          .m_hex{
+            .hon1{
+              width: 3%;
+              transform: translate(84rem, 10.5rem);
+            }
+            .hexagon1{
+              width: 200px;
+              transform: translate(65rem, 34rem);
+            }
+            .hexagon2{
+              width: 200px;
+              transform: translate(59.5rem, 22rem);
+            }
+          }
+          .m_text{
+            width: 100%;
+            .m_top{
+              position: relative;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              align-items: flex-end;
+              line-height: 1.5;
+              p{
+                margin-bottom: 2.5rem;
+                text-align: right;
+                color: #734F38;
+              }
+            }
+            .m_bottom{
+              img{
+                width: 70%;
+              }
+              h2{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate( -50%, -50% );
+              }
+            }
+          }
+        }
+        .year3{
+          position: relative;
+          .m_hex{
+            .hon1{
+              width: 50px;
+              transform: translate(42rem, 22rem);
+            }
+            .hexagon1{
+              width: 200px;
+              transform: translate(23rem, 15rem);
+            }
+          }
+          .m_text{
+            .m_top{
+
+            }
+            .m_bottom{
+              p{
+                color: #734F38;
+                line-height: 2;
+              }
+            }
+          }
+        }
       }
     }
   }

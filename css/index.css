@@ -46,7 +46,6 @@ header .hd_all {
   /* 반응형 */
 }
 header .hd_all article {
-  border-bottom: 2.5px solid #3D210F;
   width: 100%;
   padding: 0 3rem;
   display: flex;
@@ -285,7 +284,7 @@ main #story {
 }
 main #story .honey_b {
   position: absolute;
-  top: -7rem;
+  top: -5rem;
   left: 0;
 }
 main #story article {
@@ -661,6 +660,145 @@ main #characters .honey_botoom {
 }
 main #characters .honey_botoom img {
   transform: scaleY(-1);
+}
+main #milestones {
+  padding: 10rem 0;
+  width: 100%;
+}
+main #milestones article {
+  width: 100%;
+}
+main #milestones article .m_title {
+  padding-top: 2rem;
+  text-align: center;
+}
+main #milestones article .m_title h2 {
+  font-size: 3rem;
+  color: #3D210F;
+}
+main #milestones article .m_detail {
+  width: 100%;
+}
+main #milestones article .m_detail ul {
+  position: relative;
+}
+main #milestones article .m_detail ul .m_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main #milestones article .m_detail ul .m_text .m_top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main #milestones article .m_detail ul .m_text .m_top img {
+  width: 70%;
+}
+main #milestones article .m_detail ul .m_text .m_top h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main #milestones article .m_detail ul .m_text .m_top p {
+  color: #734F38;
+}
+main #milestones article .m_detail ul .m_text .m_bottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main #milestones article .m_detail ul .m_text .m_bottom img {
+  width: 170px;
+}
+main #milestones article .m_detail ul .m_text .m_bottom h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(15%, 235%);
+}
+main #milestones article .m_detail ul .m_text .m_bottom p {
+  color: #734F38;
+}
+main #milestones article .m_detail .year1 {
+  position: relative;
+}
+main #milestones article .m_detail .year1 .m_hex .hon1 {
+  width: 150px;
+  transform: translate(-1rem, 20rem);
+}
+main #milestones article .m_detail .year1 .m_hex .hexagon1 {
+  width: 200px;
+  transform: translate(26rem, 15rem);
+}
+main #milestones article .m_detail .year1 .m_hex .hexagon2 {
+  width: 200px;
+  transform: translate(6rem, 3rem);
+}
+main #milestones article .m_detail .year1 .m_text .m_bottom p {
+  color: #734F38;
+  line-height: 2;
+}
+main #milestones article .m_detail .year2 {
+  position: relative;
+}
+main #milestones article .m_detail .year2 .m_hex .hon1 {
+  width: 3%;
+  transform: translate(84rem, 10.5rem);
+}
+main #milestones article .m_detail .year2 .m_hex .hexagon1 {
+  width: 200px;
+  transform: translate(65rem, 34rem);
+}
+main #milestones article .m_detail .year2 .m_hex .hexagon2 {
+  width: 200px;
+  transform: translate(59.5rem, 22rem);
+}
+main #milestones article .m_detail .year2 .m_text {
+  width: 100%;
+}
+main #milestones article .m_detail .year2 .m_text .m_top {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1.5;
+}
+main #milestones article .m_detail .year2 .m_text .m_top p {
+  margin-bottom: 2.5rem;
+  text-align: right;
+  color: #734F38;
+}
+main #milestones article .m_detail .year2 .m_text .m_bottom img {
+  width: 70%;
+}
+main #milestones article .m_detail .year2 .m_text .m_bottom h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main #milestones article .m_detail .year3 {
+  position: relative;
+}
+main #milestones article .m_detail .year3 .m_hex .hon1 {
+  width: 50px;
+  transform: translate(42rem, 22rem);
+}
+main #milestones article .m_detail .year3 .m_hex .hexagon1 {
+  width: 200px;
+  transform: translate(23rem, 15rem);
+}
+main #milestones article .m_detail .year3 .m_text .m_bottom p {
+  color: #734F38;
+  line-height: 2;
 }
 main #contact {
   width: 100vw;
