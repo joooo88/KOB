@@ -33,12 +33,11 @@ header{
       backdrop-filter: blur(2.5px);
       article{
         width: 100%;
-        padding: 0 3rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
         .pc_menu{
-          width: 70%;
+          width: 60%;
           .menu_style{
               width: 100%;
               display: flex;
@@ -259,7 +258,7 @@ main{
         background-size: cover;
         height: 100%;
         width: 100%;
-        filter: opacity(0.9) ;
+        filter: opacity(0.6) ;
       }
     }
     article{
@@ -486,7 +485,7 @@ main{
               justify-content: center;
               width: 200px;
               height: 180px;
-              background: #ffa135;
+              background: linear-gradient(5deg,#fcbe02, #fba807,#fb9107);
               clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
               img{
                 width: 150px;
@@ -503,7 +502,7 @@ main{
               justify-content: center;
               width: 200px;
               height: 180px;
-              background: #ffa135;
+              background: linear-gradient(-25deg,#fcbe02, #fba807,#fb9107);
               clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
               img{
                 width: 150px;
@@ -544,7 +543,7 @@ main{
               justify-content: center;
               width: 200px;
               height: 180px;
-              background: #ffa135;
+              background: linear-gradient(55deg,#fcbe02, #fba807,#fb9107);
               clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
               img{
                 width: 150px;
@@ -577,7 +576,7 @@ main{
               justify-content: center;
               width: 200px;
               height: 180px;
-              background: #ffa135;
+              background: linear-gradient(-15deg,#fcbe02, #fba807,#fb9107);
               clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
               img{
                 width: 150px;
@@ -602,7 +601,7 @@ main{
               justify-content: center;
               width: 200px;
               height: 180px;
-              background: #ffa135;
+              background: linear-gradient(25deg,#fcbe02, #fba807,#fb9107);
               clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
               img{
                 width: 150px;
@@ -622,7 +621,7 @@ main{
               justify-content: center;
               width: 200px;
               height: 180px;
-              background: #ffa135;
+              background: linear-gradient(-25deg,#fcbe02, #fba807,#fb9107);
               clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
               img{
                 width: 150px;
@@ -695,11 +694,12 @@ main{
         padding: 7rem 0;
         text-align: center;
         h3{
+          font-size: 1.5rem;
           border-radius: 50px;
           margin: 0 auto;
-          padding: 0.4% 1%;
+          padding: 0.6% 1%;
           width:40%;
-          background: #F09E1A;
+          background: linear-gradient(-2deg ,#fcbe02, #fba807,#fb9107);
         }
       }
       
@@ -714,10 +714,17 @@ main{
   }
 
   #milestones{
-    padding: 10rem 0;
+    padding: 10rem 0 17rem 0;
     width: 100%;
+    position: relative;
+    
     article{
       width: 100%;
+      .svg-m{
+        img{
+          position: absolute;
+        }
+      }
       .m_title{
         padding-top: 2rem;
         text-align: center;
@@ -830,11 +837,11 @@ main{
             }
             .hexagon1{
               width: 200px;
-              transform: translate(65rem, 34rem);
+              transform: translate(70rem, 34rem);
             }
             .hexagon2{
               width: 200px;
-              transform: translate(59.5rem, 22rem);
+              transform: translate(64.5rem, 22rem);
             }
           }
           .m_text{
@@ -910,6 +917,14 @@ main{
           }
         }
       }
+      .m_under{
+        position: absolute;
+        bottom: 0;
+        left: -9px;
+        img{
+          transform: scaleY(-1);
+        }
+      }
     }
   }
 
@@ -918,6 +933,7 @@ main{
     height: 100vh;
     position: relative;
     background: #e7a117;
+    
     .contact_bg{
       width: 100%;
       height: 100%;
@@ -949,20 +965,32 @@ main{
       img{}
       form{
         border-radius: 15px;
-        background: #f9e8b1;
+        background: #f9e8b15b;
         width: 60%;
         height: 300px;
         margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         gap: 3rem;
+        #email{
+          width: 50%;
+          padding: 1% 1.35%;
+        }
         input{
+          display: block;
+          margin: 0 auto;
+          background-color: #fff;
+          border-radius: 5px;
           border: 2px solid #3D210F;
           padding: 0.3% 1.8%;
           &::placeholder{
             color: #2b0910;
           }
+        }
+        .subm{
+          padding: 1% 1.35%;
         }
         
       }
@@ -974,13 +1002,29 @@ main{
 footer {
   background-color: #2b0910;
   width: 100%;
-  padding: 60px 0;
-  color: #fff;
-
+  color: #ffffffe0;
+  overflow: hidden;
+  position: relative;
   .footer_wrap {
     width: 100%;
-
+    .footer_bg{
+      width: 100%;
+      height: 100%;
+      background: url(/img/characters_bg_3.png) no-repeat center;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      filter: opacity(0.3);
+      // max-width: 100%;
+      // img{
+      //   width: 100%;
+      //   background-size: cover;
+      //   //height: 30vh;
+      // }
+    }
     .footer_content {
+      padding: 60px 0;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -1018,6 +1062,7 @@ footer {
 
           p {
             font-size: 0.8em;
+            
           }
 
           span {
@@ -1035,14 +1080,14 @@ footer {
 
         a {
           display: inline-block;
-          background-color: rgba(255, 255, 255, 0.1);
-          width: 40px;
+          background-color: rgb(249 232 177 / 60%);
+          width: 45px;
           height: 40px;
-          border-radius: 50%;
+          margin-right: 10px;
+          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           line-height: 40px;
-          margin-right: 5%;
           transition: all 0.5s;
-          color: #fff;
+          color: #3D210F;
           text-decoration: none;
 
           &:last-child {
@@ -1055,13 +1100,14 @@ footer {
           }
 
           &:hover {
-            background-color: #5A3733;
+            background-color: #fffbd9ef;
             box-shadow: 0 0 9px #5A3733;
+            
           }
 
           img {
-            width: 20px;
-            height: 20px;
+            width: 40px;
+            height: 40px;
           }
         }
       }
