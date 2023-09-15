@@ -262,15 +262,16 @@ main #home article .home_txt .home_btn button div p {
 }
 main #home article .home_logo {
   width: 40%;
+  text-align: center;
 }
 main #home article .home_logo .logo_box {
   position: relative;
+  max-width: 80%;
 }
 main #home article .home_logo .logo_box .logoimg {
   position: absolute;
   width: 280px;
-  left: 5%;
-  top: 18%;
+  transform: translate(2.5rem, 6rem);
 }
 main #home article .home_logo .logo_box .logoj {
   width: 400px;
@@ -352,6 +353,15 @@ main #story article .story_c ul .img_fix img {
   position: absolute;
   top: 15rem;
   right: 15rem;
+  animation: updown 4s ease-in-out infinite;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
 }
 main #story article .story_c ul .img_fix span {
   bottom: 9rem;
@@ -404,7 +414,7 @@ main #characters .honey_bg .honey_b_bg img {
 }
 main #characters .honey_ch {
   position: relative;
-  padding: 0 5rem;
+  padding: 0 7rem;
 }
 main #characters .honey_ch .c_title {
   text-align: center;
@@ -607,7 +617,7 @@ main #characters .honey_ch span {
   text-align: center;
   margin: 0 auto;
   border: 0px;
-  border-bottom: 2px solid #3D210F;
+  border-bottom: 5px solid #3D210F;
   border-style: dashed;
 }
 main #characters .honey_hiden {

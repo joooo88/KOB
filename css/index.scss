@@ -299,13 +299,14 @@ main{
 
         .home_logo{
           width: 40%;
+          text-align: center;
           .logo_box{
             position: relative;
+            max-width: 80%;
               .logoimg{
                 position: absolute;
                 width: 280px;
-                left: 5%;
-                top: 18%;
+                transform: translate(2.5rem, 6rem);
               }
               .logoj{
                 width: 400px;
@@ -397,6 +398,15 @@ main{
               position: absolute;
               top: 15rem;
               right: 15rem;
+              animation: updown 4s ease-in-out infinite;
+            }
+            @keyframes updown {
+              0%{
+                transform: translateY(0);
+              }
+              50%{
+                transform: translateY(-5%);
+              }
             }
             span{
               bottom: 9rem;
@@ -452,7 +462,7 @@ main{
     }
     .honey_ch{
       position: relative;
-      padding: 0 5rem;
+      padding: 0 7rem;
       .c_title{
         text-align: center;
         padding-top: 15rem;
@@ -653,7 +663,7 @@ main{
         text-align: center;
         margin: 0 auto;
         border : 0px;
-        border-bottom: 2px solid #3D210F ;
+        border-bottom: 5px solid #3D210F ;
         border-style: dashed;
       }
     }
