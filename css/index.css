@@ -75,14 +75,11 @@ header .hd_all article .pc_menu .menu_style li a::after {
   display: block;
   content: "";
   transform: translateY(5px) scaleX(0);
-  border-bottom: solid 3px #ffffff;
+  border-bottom: solid 3px #3D210F;
   transition: transform 0.4s ease-in-out;
 }
 header .hd_all article .pc_menu .menu_style li a:hover::after {
   transform: translateY(5px) scaleX(1);
-}
-header .hd_all article .pc_menu .menu_style li a div bb:hover {
-  color: #ffa135;
 }
 @keyframes shine {
   from {
@@ -91,6 +88,13 @@ header .hd_all article .pc_menu .menu_style li a div bb:hover {
   to {
     -webkit-mask-position: -50%;
   }
+}
+header .hd_all article .pc_menu .menu_style .lang div {
+  display: flex;
+  gap: 1rem;
+}
+header .hd_all article .pc_menu .menu_style .lang div a:hover {
+  color: #ff6200;
 }
 header .hd_all article hgroup {
   width: 30%;
@@ -107,15 +111,13 @@ header .hd_all article hgroup a h1 img {
   margin-bottom: 5px;
 }
 header .hd_all .m_menu_button {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   position: absolute;
-  right: 22px;
+  left: 3rem;
   top: 22px;
   z-index: 10;
   display: none;
-  background: white;
-  border-radius: 50%;
 }
 header .hd_all .m_menu_button a.menu-trigger, header .hd_all .m_menu_button a.menu-trigger span {
   display: inline-block;
@@ -123,41 +125,41 @@ header .hd_all .m_menu_button a.menu-trigger, header .hd_all .m_menu_button a.me
 }
 header .hd_all .m_menu_button a.menu-trigger {
   position: relative;
-  width: 27px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 header .hd_all .m_menu_button a.menu-trigger span {
   position: absolute;
   left: 7px;
   width: 100%;
-  height: 4px;
-  background-color: black;
+  height: 5px;
+  background-color: #2b0910;
   border-radius: 50px;
 }
 header .hd_all .m_menu_button a.menu-trigger span:nth-child(1) {
   top: 10px;
 }
 header .hd_all .m_menu_button a.menu-trigger span:nth-child(2) {
-  top: 18px;
+  top: 22.5px;
 }
 header .hd_all .m_menu_button a.menu-trigger span:nth-child(3) {
   bottom: 0px;
 }
 header .hd_all .m_menu_button .menu-trigger.active-1 span:nth-child(1) {
-  transform: translateY(5.5px) rotate(-45deg);
+  transform: translateY(8.5px) rotate(-45deg);
 }
 header .hd_all .m_menu_button .menu-trigger.active-1 span:nth-child(2) {
   opacity: 0;
 }
 header .hd_all .m_menu_button .menu-trigger.active-1 span:nth-child(3) {
-  transform: translateY(-10.5px) rotate(45deg);
+  transform: translateY(-16.5px) rotate(45deg);
 }
 header .hd_all .m_menu {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
-  background-color: white;
+  width: 40%;
+  background-color: #fdc401;
   display: none;
   text-align: center;
 }
@@ -169,7 +171,7 @@ header .hd_all .m_menu .menu_style {
 }
 header .hd_all .m_menu .menu_style li {
   width: 100%;
-  margin-bottom: 9%;
+  margin-bottom: 4rem;
   font-size: 1.5rem;
   /* .dropdown {
     display: none;
@@ -185,15 +187,15 @@ header .hd_all .m_menu .menu_style li:last-child {
   margin-bottom: 0 !important;
   font-size: 1.5em;
   font-weight: 700;
-  color: black;
+  color: #2b0910;
 }
 header .hd_all .m_menu .menu_style li a {
   font-size: 1.2em;
   font-weight: 600;
-  color: black;
+  color: #2b0910;
 }
 header .hd_all .m_menu .menu_style li a:hover {
-  color: white;
+  color: #fb9107;
   text-decoration: underline;
   text-decoration-thickness: 5px;
   text-underline-offset: 11px;
@@ -247,15 +249,19 @@ main #home article .home_txt h2 {
 }
 main #home article .home_txt .home_btn button {
   border: 2px solid #3D210F;
-  padding: 0.5% 3%;
+  padding: 0.7% 3%;
   border-radius: 30px 30px 0 0;
+}
+main #home article .home_txt .home_btn button:focus {
+  outline: none;
 }
 main #home article .home_txt .home_btn button div {
   display: flex;
   align-items: center;
 }
 main #home article .home_txt .home_btn button div img {
-  width: 30px;
+  width: 40px;
+  padding-right: 10px;
 }
 main #home article .home_txt .home_btn button div p {
   margin-bottom: 0;
@@ -265,6 +271,7 @@ main #home article .home_logo {
   text-align: center;
 }
 main #home article .home_logo .logo_box {
+  margin: 0 auto;
   position: relative;
   max-width: 80%;
 }
@@ -927,7 +934,7 @@ main #contact .cont-form form .subm {
 
 /*footer*/
 footer {
-  background-color: #2b0910;
+  background-color: #28160B;
   width: 100%;
   color: rgba(255, 255, 255, 0.8784313725);
   overflow: hidden;
@@ -944,10 +951,10 @@ footer .footer_wrap .footer_bg {
   position: absolute;
   top: 0;
   left: 0;
-  filter: opacity(0.3);
+  filter: opacity(0.2);
 }
 footer .footer_wrap .footer_content {
-  padding: 60px 0;
+  padding: 3rem 10rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -980,15 +987,15 @@ footer .footer_wrap .footer_content .footer_cont_left .f_cont_left_info h5 {
   margin-bottom: 7%;
 }
 footer .footer_wrap .footer_content .footer_cont_left .f_cont_left_info p {
-  font-size: 0.8em;
+  font-size: 1rem;
 }
 footer .footer_wrap .footer_content .footer_cont_left .f_cont_left_info span {
   font-weight: 600 !important;
 }
 footer .footer_wrap .footer_content .footer_cont_right {
-  width: 30%;
+  width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
 }

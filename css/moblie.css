@@ -1,9 +1,596 @@
 @charset "UTF-8";
 /*데탑 1440px*/
+@media screen and (max-width: 1440px) {
+  main #home article .home_txt h2 {
+    line-height: 2.3;
+  }
+  main #story article .story_c ul .img_fix img {
+    width: 400px;
+    top: 18rem;
+    right: 12rem;
+  }
+  main #story article .story_c ul .img_fix span {
+    width: 800px;
+    bottom: 4rem;
+  }
+  main #characters {
+    height: 420vh;
+  }
+  main #characters .honey_bg .honey_b_bg {
+    height: 400vh;
+  }
+  main #characters .honey_ch .c_detail .bee1 {
+    padding: 8rem 0 0 15rem;
+  }
+  main #characters .honey_ch .c_detail .bee2 {
+    padding: 0 15rem 0 0;
+  }
+  main #characters .honey_ch .c_detail .bee3 {
+    padding: 0 0 0 20rem;
+  }
+  main #milestones article .svg-m img {
+    max-width: 100%;
+    background-size: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 2000px;
+  }
+  main #milestones article .m_detail .year1 .m_hex .hon1 {
+    transform: translate(-14rem, 20rem);
+  }
+  main #milestones article .m_detail .year1 .m_hex .hexagon1 {
+    transform: translate(12rem, 15rem);
+  }
+  main #milestones article .m_detail .year1 .m_text .m_line {
+    left: 44.5rem;
+  }
+  main #milestones article .m_detail .year2 .m_text .m_line {
+    left: 35.5rem;
+  }
+  main #milestones article .m_detail .year2 .m_hex .hexagon1 {
+    transform: translate(57rem, 34rem);
+  }
+  main #milestones article .m_detail .year2 .m_hex .hexagon2 {
+    transform: translate(51.5rem, 22rem);
+  }
+  main #milestones article .m_detail .year2 .m_hex .hon1 {
+    transform: translate(77rem, 10.5rem);
+  }
+  main #milestones article .m_detail .year3 .m_hex .hon1 {
+    transform: translate(28rem, 22rem);
+  }
+  main #milestones article .m_detail .year3 .m_hex .hexagon1 {
+    transform: translate(9rem, 15rem);
+  }
+  main #milestones article .m_detail .year3 .m_text .m_line {
+    left: 44.5rem;
+  }
+  main #contact .cont-title {
+    padding-top: 5rem;
+  }
+}
 /*노트북 1024px*/
+@media screen and (max-width: 1024px) {
+  header .hd_all {
+    padding: 0 3.5rem;
+  }
+  header .hd_all article .pc_menu {
+    width: 100%;
+  }
+  main #home article .home_txt h2 {
+    font-size: 1.1rem;
+  }
+  main #home article .home_logo .logo_box .logoimg {
+    width: 235px;
+  }
+  main #home article .home_logo .logo_box .logoj {
+    width: 350px;
+  }
+  main #story article {
+    padding: 0 5rem;
+  }
+  main #story article .story_text {
+    width: 50%;
+    padding-top: 5rem;
+  }
+  main #story article .story_text h3 {
+    font-size: 1.1rem;
+  }
+  main #story article .story_c ul .img_float .q3-1 {
+    top: 6rem;
+    left: 8rem;
+  }
+  main #story article .story_c ul .img_float .q3-2 {
+    right: 28rem;
+  }
+  main #story article .story_c ul .img_fix img {
+    width: 380px;
+    top: 15rem;
+    right: 2rem;
+  }
+  main #story article .story_c ul .img_fix span {
+    width: 700px;
+    right: -6rem;
+    bottom: 7rem;
+  }
+  main #characters {
+    height: 435vh;
+  }
+  main #characters .honey_bg .honey_b_bg {
+    height: 420vh;
+  }
+  main #characters .honey_ch .c_detail .bee1 {
+    padding: 3rem 0 0 0;
+    justify-content: center;
+  }
+  main #characters .honey_ch .c_detail .bee2 {
+    padding: 5rem 0;
+    justify-content: center;
+  }
+  main #characters .honey_ch .c_detail .bee3 {
+    padding: 0 0 0 15rem;
+    justify-content: center;
+  }
+  main #characters .honey_hiden .hiden_box h3 {
+    width: 60%;
+  }
+  main #characters .honey_botoom {
+    bottom: -4rem;
+  }
+  main #milestones {
+    padding: 7rem 0 17rem 0;
+  }
+  main #milestones article .svg-m img {
+    height: 1800px;
+  }
+  main #milestones article .m_detail ul .m_text .m_top {
+    align-items: flex-end;
+  }
+  main #milestones article .m_detail ul .m_text .m_top img {
+    width: 55%;
+  }
+  main #milestones article .m_detail ul .m_text .m_top h2 {
+    transform: translate(50%, -50%);
+  }
+  main #milestones article .m_detail .year1 .m_text .m_line {
+    top: 3rem;
+    left: 31.5rem;
+  }
+  main #milestones article .m_detail .year1 .m_hex .hexagon1 {
+    width: 150px;
+    transform: translate(9rem, 12rem);
+  }
+  main #milestones article .m_detail .year1 .m_hex .hexagon2 {
+    width: 150px;
+    transform: translate(4rem, 2rem);
+  }
+  main #milestones article .m_detail .year1 .m_hex .hon1 {
+    width: 90px;
+    transform: translate(-11rem, 17rem);
+  }
+  main #milestones article .m_detail .year2 {
+    transform: translateY(2rem);
+  }
+  main #milestones article .m_detail .year2 .m_text .m_bottom {
+    align-items: flex-start;
+  }
+  main #milestones article .m_detail .year2 .m_text .m_bottom img {
+    width: 55%;
+  }
+  main #milestones article .m_detail .year2 .m_text .m_bottom h2 {
+    transform: translate(-150%, -50%);
+  }
+  main #milestones article .m_detail .year2 .m_text .m_line {
+    left: 22.5rem;
+  }
+  main #milestones article .m_detail .year2 .m_hex .hexagon1 {
+    width: 150px;
+    transform: translate(39rem, 29rem);
+  }
+  main #milestones article .m_detail .year2 .m_hex .hexagon2 {
+    width: 150px;
+    transform: translate(34.5rem, 20rem);
+  }
+  main #milestones article .m_detail .year2 .m_hex .hon1 {
+    width: 40px;
+    transform: translate(52rem, 12rem);
+  }
+  main #milestones article .m_detail .year3 .m_text .m_line {
+    top: 3.2rem;
+    left: 32rem;
+  }
+  main #milestones article .m_detail .year3 .m_hex .hexagon1 {
+    width: 150px;
+    transform: translate(7rem, 12rem);
+  }
+  main #milestones article .m_detail .year3 .m_hex .hon1 {
+    width: 30px;
+    transform: translate(20rem, 17rem);
+  }
+}
 /*패드 991px*/
+@media screen and (max-width: 991px) {
+  header .hd_all article hgroup {
+    width: 100%;
+  }
+  header .hd_all article hgroup a h1 {
+    margin: 0;
+  }
+  header .hd_all .pc_menu {
+    display: none;
+  }
+  header .hd_all .m_menu_button {
+    display: block;
+  }
+}
 /*아이패드 768px*/
+@media screen and (max-width: 768px) {
+  main #home article {
+    flex-direction: column-reverse;
+  }
+  main #home article .home_txt {
+    width: 100%;
+  }
+  main #home article .home_logo .logo_box {
+    padding-top: 3rem;
+  }
+  main #home article .home_logo .logo_box .logoimg {
+    width: 130px;
+    transform: translate(1.6rem, 3.6rem);
+  }
+  main #home article .home_logo .logo_box .logoj {
+    width: 200px;
+  }
+  main #story .honey_b {
+    top: -2rem;
+  }
+  main #story .honey_b img {
+    width: 100%;
+  }
+  main #story article {
+    padding: 0px 3rem;
+  }
+  main #story article .story_text h3 {
+    font-size: 1rem;
+  }
+  main #story article .story_c ul .img_float .q2 {
+    top: 17rem;
+  }
+  main #story article .story_c ul .img_float .q3-2 {
+    right: 21rem;
+  }
+  main #story article .story_c ul .img_float .q4 {
+    width: 25%;
+    top: 1rem;
+    left: -4rem;
+  }
+  main #story article .story_c ul .img_fix img {
+    top: 19rem;
+    right: 1rem;
+    width: 300px;
+  }
+  main #story article .story_c ul .img_fix span {
+    width: 600px;
+    right: -7rem;
+    bottom: 8rem;
+  }
+  main #characters .honey_bg .honey_b_c {
+    left: 0;
+  }
+  main #characters .honey_botoom img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    width: 100%;
+  }
+  main #milestones article .svg-m img {
+    display: none;
+  }
+  main #milestones article .m_detail ul .m_text {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  main #milestones article .m_detail ul .m_text .m_top {
+    flex-direction: row;
+  }
+  main #milestones article .m_detail ul .m_text .m_top h2 {
+    transform: translate(-50%, -50%);
+  }
+  main #milestones article .m_detail ul .m_text span {
+    display: none;
+  }
+  main #milestones article .m_detail ul .m_text .m_bottom {
+    text-align: center;
+  }
+  main #milestones article .m_detail .year1 .m_hex .hexagon1 {
+    transform: translate(8rem, 12rem);
+  }
+  main #milestones article .m_detail .year1 .m_hex .hexagon2 {
+    transform: translate(3rem, 2rem);
+  }
+  main #milestones article .m_detail .year1 .m_hex .hon1 {
+    transform: translate(-12rem, 17rem);
+  }
+  main #milestones article .m_detail .year2 {
+    position: relative;
+  }
+  main #milestones article .m_detail .year2 .m_hex {
+    position: absolute;
+  }
+  main #milestones article .m_detail .year2 .m_hex .hexagon1 {
+    transform: translate(28rem, 1rem);
+  }
+  main #milestones article .m_detail .year2 .m_hex .hexagon2 {
+    transform: translate(24.5rem, 10rem);
+  }
+  main #milestones article .m_detail .year2 .m_hex .hon1 {
+    transform: translate(8rem, 28rem);
+  }
+  main #milestones article .m_detail .year2 .m_text {
+    flex-direction: column-reverse;
+  }
+  main #milestones article .m_detail .year2 .m_text .m_bottom {
+    flex-direction: row;
+  }
+  main #milestones article .m_detail .year2 .m_text .m_bottom h2 {
+    transform: translate(-50%, -50%);
+  }
+  main #milestones article .m_detail .year2 .m_text .m_top {
+    align-items: center;
+  }
+  main #milestones article .m_detail .year2 .m_text .m_top p {
+    text-align: center;
+  }
+  main #milestones article .m_detail .year3 {
+    position: relative;
+  }
+  main #milestones article .m_detail .year3 .m_hex {
+    position: absolute;
+  }
+  main #milestones article .m_detail .year3 .m_hex .hexagon1 {
+    transform: translate(5rem, 1rem);
+  }
+  main #milestones article .m_detail .year3 .m_hex .hon1 {
+    transform: translate(33rem, 5rem);
+  }
+  main #milestones article .m_under {
+    left: 0;
+  }
+  main #milestones article .m_under img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    width: 100%;
+  }
+  footer .footer_wrap .footer_content {
+    padding: 2rem;
+  }
+}
 /* 모바일 767px*/
+@media screen and (max-width: 767px) {
+  main #story article {
+    flex-direction: column;
+  }
+  main #story article .story_text {
+    width: 100%;
+    text-align: center;
+  }
+  main #story article .story_c ul .img_fix img {
+    top: 28rem;
+    right: 14.5rem;
+    width: 250px;
+  }
+  main #story article .story_c ul .img_fix span {
+    width: 400px;
+    right: 11rem;
+    bottom: 2rem;
+  }
+  main #story article .story_c ul .img_float .q1 {
+    display: none;
+  }
+  main #story article .story_c ul .img_float .q2 {
+    display: none;
+  }
+  main #story article .story_c ul .img_float .q3-1 {
+    display: none;
+  }
+  main #story article .story_c ul .img_float .q3-2 {
+    display: none;
+  }
+  main #story article .story_c ul .img_float .q5 {
+    display: none;
+  }
+  main #characters .honey_ch {
+    padding: 0 3rem;
+  }
+  main #milestones {
+    padding: 7rem 0;
+  }
+  main #milestones article .m_under {
+    bottom: -3px;
+  }
+  footer .footer_wrap .footer_content {
+    flex-direction: column;
+  }
+  footer .footer_wrap .footer_content .footer_cont_right {
+    width: 100%;
+    padding-top: 2rem;
+    justify-content: flex-start;
+  }
+}
 /* 모바일2 576px */
+@media screen and (max-width: 576px) {
+  header .hd_all .m_menu {
+    width: 100%;
+  }
+  main #home {
+    height: 110vh;
+  }
+  main #home article .home_logo {
+    width: 55%;
+  }
+  main #home article .home_logo .logo_box {
+    padding-top: 0;
+  }
+  main #home article .home_txt h2 {
+    font-size: 1rem;
+  }
+  main #story article .story_c ul .img_fix img {
+    top: 30rem;
+    right: 8.5rem;
+  }
+  main #story article .story_c ul .img_fix span {
+    right: 5rem;
+    bottom: 1rem;
+  }
+  main #characters {
+    height: 420vh;
+  }
+  main #characters .honey_ch .c_detail .bee3 {
+    padding: 0 0 0 13rem;
+  }
+  main #characters .honey_hiden .hiden_bottom ul .hi-1 img {
+    width: 100px;
+  }
+  main #characters .honey_hiden .hiden_box h3 {
+    width: 70%;
+    font-size: 1rem;
+    padding: 2%;
+  }
+  main #characters .honey_botoom {
+    bottom: -3rem;
+  }
+  main #milestones article .m_detail .year1 .m_hex .hexagon1 {
+    transform: translate(2rem, 12rem);
+  }
+  main #milestones article .m_detail .year1 .m_hex .hexagon2 {
+    transform: translate(10rem, 2rem);
+  }
+  main #milestones article .m_detail .year1 .m_hex .hon1 {
+    transform: translate(-18rem, 17rem);
+  }
+  main #milestones article .m_detail .year2 .m_hex .hexagon1 {
+    transform: translate(22rem, 1rem);
+  }
+  main #milestones article .m_detail .year2 .m_hex .hexagon2 {
+    transform: translate(17.5rem, 10rem);
+  }
+  main #milestones article .m_detail .year2 .m_hex .hon1 {
+    transform: translate(5rem, 28rem);
+  }
+  main #milestones article .m_detail .year3 .m_hex .hexagon1 {
+    transform: translate(0rem, 1rem);
+  }
+  main #milestones article .m_detail .year3 .m_hex .hon1 {
+    transform: translate(26rem, 5rem);
+  }
+  main #contact .cont-form form {
+    width: 85%;
+  }
+  footer .footer_wrap .footer_content .footer_cont_left .f_cont_left_logo {
+    width: 100%;
+  }
+}
 /* 모바일3 갤석시 425px */
+@media screen and (max-width: 425px) {
+  main #home article {
+    padding: 0 2rem;
+  }
+  main #home article .home_txt h2 {
+    font-size: 0.9rem;
+  }
+  main #story article .story_c ul .img_float .q4 {
+    width: 40%;
+    top: -2rem;
+    left: -4rem;
+  }
+  main #story article .story_c ul .img_fix img {
+    width: 200px;
+    right: 6rem;
+    top: 33rem;
+  }
+  main #story article .story_c ul .img_fix span {
+    right: 1rem;
+  }
+  main #characters .honey_ch .c_detail .bee1 .bee1_left .beeimg {
+    width: 160px;
+    height: 140px;
+  }
+  main #characters .honey_ch .c_detail .bee1 .bee1_left .beeimg img {
+    width: 110px;
+  }
+  main #characters .honey_ch .c_detail .bee1 .bee1_right .beeimg {
+    width: 160px;
+    height: 140px;
+    transform: translate(-2rem, 4.8rem);
+  }
+  main #characters .honey_ch .c_detail .bee1 .bee1_right .beeimg img {
+    width: 110px;
+  }
+  main #characters .honey_ch .c_detail .bee1 .bee1_right .bee1_text p {
+    font-size: 1.5rem;
+    transform: translate(1.5rem, -7rem);
+  }
+  main #characters .honey_ch .c_detail .bee1 .bee1_right .bee1_text .ch1 {
+    width: 120px;
+    transform: translate(4rem, -9rem);
+  }
+  main #characters .honey_ch .c_detail .bee1 .bee1_right .bee1_text .ch2 {
+    width: 30px;
+  }
+  main #characters .honey_ch .c_detail .bee2 .bee2_left .beeimg {
+    width: 160px;
+    height: 140px;
+    transform: translate(2rem, 5rem);
+  }
+  main #characters .honey_ch .c_detail .bee2 .bee2_left .beeimg img {
+    width: 110px;
+  }
+  main #characters .honey_ch .c_detail .bee2 .bee2_left .bee1_text p {
+    font-size: 1.5rem;
+    transform: translate(6.5rem, -8rem);
+  }
+  main #characters .honey_ch .c_detail .bee2 .bee2_left .bee1_text .ch1 {
+    width: 120px;
+    transform: translate(-1rem, -8rem) scaleX(-1);
+  }
+  main #characters .honey_ch .c_detail .bee2 .bee2_left .bee1_text .ch3 {
+    transform: translate(8rem, -25rem);
+  }
+  main #characters .honey_ch .c_detail .bee2 .bee2_right .beeimg {
+    width: 160px;
+    height: 140px;
+  }
+  main #characters .honey_ch .c_detail .bee2 .bee2_right .beeimg img {
+    width: 110px;
+  }
+  main #characters .honey_ch .c_detail .bee3 .bee3_left .beeimg {
+    width: 160px;
+    height: 140px;
+  }
+  main #characters .honey_ch .c_detail .bee3 .bee3_left .beeimg img {
+    width: 110px;
+  }
+  main #characters .honey_ch .c_detail .bee3 .bee3_left .more2 {
+    transform: translate(-8.6rem, -5rem);
+  }
+  main #characters .honey_ch .c_detail .bee3 .bee3_right .beeimg {
+    width: 160px;
+    height: 140px;
+  }
+  main #characters .honey_ch .c_detail .bee3 .bee3_right .beeimg img {
+    width: 110px;
+  }
+  main #characters .honey_ch .c_detail .bee3 .bee3_right .bee3_text p {
+    font-size: 1.5rem;
+    transform: translate(-8.5rem, -13rem);
+  }
+  main #characters .honey_ch .c_detail .bee3 .bee3_right .bee3_text .ch1 {
+    width: 120px;
+    transform: translate(-10rem, -16rem) scaleX(-1) rotate(-60deg);
+  }
+  main #characters .honey_ch .c_detail .bee3 .bee3_right .bee3_text .ch4 {
+    transform: translate(-8rem, -14rem);
+  }
+}
 /* 모바일4 아이폰 375px *//*# sourceMappingURL=moblie.css.map */

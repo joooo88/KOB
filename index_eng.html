@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ko" dir="ltr">
 
 <head>
   <meta charset="utf-8">
   <title>KOB | Kingdom of Bee</title>
-
 
   <!--meta-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"> 
@@ -19,18 +18,22 @@
   <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/index_eng.css">
+  <link rel="stylesheet" href="css/moblie.css">
   <link rel="stylesheet" href="css/moblie_eng.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
   <!--favicon--->
   <link href="img/favicon.ico" rel="icon">
   <link href="img/favicon.ico" rel="apple-touch-icon">
 
- <!--js-->
+  <!--js-->
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="js/menu_scroll.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  
 </head>
 
 
@@ -38,61 +41,97 @@
 <body>
 
 
-  <header>
+  <header  class="header" >
 
-    <div class="">
+    <div class="hd_all">
 
-      <hgroup>
+      
 
-        <h1><img src="img/" alt="logo"></h1>
+      <article>
+        <nav class="pc_menu">
+          <ul class="menu_style">
+            <li><a href="#home" class="scroll"onClick="selectLink(this); return false;">Home</a></li>
+            <li><a href="#story" class="scroll" onClick="selectLink(this); return false;">Story</a></li>
+            <li><a href="#characters" class="scroll" onClick="selectLink(this); return false;">KOB Characters</a></li>
+            <li><a href="#milestones" class="scroll" onClick="selectLink(this); return false;">Milestones</a></li>
+            <li><a href="#contact" class="scroll" onClick="selectLink(this); return false;">Contact</a></li>
+            <li class="lang">
+              <div>
+              <a href="index.html" class="scroll">KOR
+              </a>
+              <a href="index_eng.html" class="scroll">ENG
+              </a>
+            </div>
+        </li>
+          </ul>
+        </nav>
 
-      </hgroup>
+        <hgroup>
 
+          <a href="#home">
+            <h1 class="menu_style">
+              <img src="img/KOB logo.png" alt="logo">
+            </h1>
+          </a>
+  
+        </hgroup>
+      </article>
+      
 
-      <nav class="">
-        <ul>
+      
+      
 
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
+     <!--반응형-->
 
-        </ul>
-      </nav>
+     <div class="m_menu_button">
 
+      <a href="#" class="menu-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
 
-      <!--반응형-->
+    </div>
 
-      <div class="">
+     <!--반응형 js-->
+     <script type="text/javascript">
 
-        <img src="img/" alt="menu_button">
-
-      </div>
-
-      <nav class="">
-
-        <ul>
-
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-
-        </ul>
-
-      </nav>
-
-      <!--반응형 js-->
-      <script type="text/javascript">
-        $(function () {
-          $("").click(function () {
-            $("").animate({ width: "toggle" }, 250);
-          });
+      $(function () {
+        $(".menu-trigger").click(function (e) {
+          e.preventDefault();
+          $(this).toggleClass('active-' + 1);
         });
+      });
 
-      </script>
+    </script>
+
+    <nav class="m_menu">
+      <ul class="menu_style">
+        <li><a href="#home" class="scroll"onClick="selectLink(this); return false;">Home</a></li>
+        <li><a href="#story" class="scroll" onClick="selectLink(this); return false;">Story</a></li>
+        <li><a href="#characters" class="scroll" onClick="selectLink(this); return false;">KOB Characters</a></li>
+        <li><a href="#milestones" class="scroll" onClick="selectLink(this); return false;">Milestones</a></li>
+        <li><a href="#contact" class="scroll" onClick="selectLink(this); return false;">Contact</a></li>
+        <li class="lang">
+          <div>
+          <a href="index.html" class="scroll">KOR
+          </a>
+          <a href="index_eng.html" class="scroll">ENG
+          </a>
+        </div>
+    </li>
+      </ul>
+    </nav>
+
+    <!--반응형 js-->
+    <script type="text/javascript">
+      $(function () {
+        $(".m_menu_button").click(function () {
+          $(".m_menu").animate({ height: "toggle" }, 250);
+        });
+      });
+
+    </script>
 
     </div>
 
@@ -100,15 +139,353 @@
 
   <main>
 
+    <!-- home -->
+    <section id="home">
+
+      <div class="home_bg">
+        <img src="img/contact_bg.jpg">
+      </div>
+
+      <article>
+        <div class="home_txt" data-aos="fade-right" data-aos-duration="1000" >
+          <h1>Kingdom of Bee.</h1>
+          <h2>KOB (Kingdom of Bee) is<br>
+            a collection of digital art pieces that exist on<br> the Ethereum network, utilizing ERC-721 technology.<br>
+            The characters in KOB come with various charms<br> and professions, each showcasing their unique personalities.<br>
+            Collect characters with different professions and build your own kingdom.<br>
+          </h2>
+          <br>
+  
+          <div class="home_btn">
+            <button type="button" onclick="location.href='KOB-Whitepaper EN.pdf' ">
+              <div>
+                <img src="img/bee2.png"><p>Whitepaper</p>
+              </div>
+            </button>
+            <button type="button" onclick="location.href='' ">
+              <div>
+                <img src="img/bee2.png"><p>Marketplace</p>
+              </div>
+            </button>
+          </div>
+        </div>
+  
+        <div class="home_logo" >
+          <div class="logo_box" data-aos="fade-left" data-aos-duration="1000">
+            <img class="logoimg" src="img/KOB logo.png">
+            <img class="logoj" src="img/벌집 4.png">
+          </div>
+        </div>
+      </article>
+      
+      
+      
+    </section>
+
+    <!-- story -->
+    <section id="story">
+      <div class="honey_b">
+        <img src="img/honey-hr-white.png">
+      </div>
+
+      <article>
+        <div class="story_text"  >
+          <h1 data-aos="fade-right" data-aos-duration="1200">Story.</h1>
+          <h3 data-aos="fade-right" data-aos-duration="1500">
+            A planet within the Andromeda galaxy.<br><br>
+            Here, there exists a kingdom of various bee species. <br><br>
+            They are facing severe drought, food shortages, and resource scarcity, unlike anything they've ever experienced before.<br><br>
+            As a result, a dark shadow has begun to cast over the once peaceful kingdoms, and as part of their efforts to break free from this situation, plans are made to send an exploration team to other regions of the planet.<br><br>
+            The exploration team begins their journey into uncharted territories of the planet.
+          </h3>
+        </div>
+
+        <div class="story_c">
+          <ul>
+            <li class="img_float">
+              <img class="q1" src="img/q1.png">
+              <img class="q2" src="img/q2.png">
+              <img class="q3-1" src="img/q3.png">
+              <img class="q3-2" src="img/q3.png">
+              <img class="q4" src="img/q4.png">
+              <img class="q5" src="img/q5.png" >
+            </li>
+            <li class="img_fix">
+              <img src="img/story-q.png">
+              <span></span>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- characters -->
+    <section id="characters">
+
+      <article class="honey_bg">
+        <div class="honey_b_c">
+          <img src="img/honey_to.svg">
+        </div>
+        <div class="honey_b_bg">
+          <img src="img/characters_bg_3.png">
+        </div>
+      </article>
+
+      <article class="honey_ch">
+        <div class="c_title">
+          <img src="img/bee.png">
+          <h1 data-aos="fade-up" data-aos-duration="1000">KOB Characters.</h1>
+          <h3 data-aos="fade-up" data-aos-duration="1200">KOB characters consist of bees with various professions.<br>
+            Currently, there are three types of bees, but more varieties of bees will be created through updates.</h3>
+        </div>
+
+        <div class="c_detail">
+          <ul class="bee1" data-aos-easing="linear" data-aos="fade-right" data-aos-duration="1000">
+            <li class="bee1_left">
+              <div class="beeimg"><img src="img/character/bb1.png"></div>
+              <div class="beeimg"><img src="img/character/bb3.png"></div>
+            </li>
+
+
+            <li class="bee1_right">
+              <div class="beeimg"><img src="img/character/bb2.png"></div>
+              <div class="bee1_text">
+                <p>Bee</p>
+                <img class="ch1" src="img/chara_1.svg">
+                <img class="ch2" src="img/chara_2.svg">
+              </div>
+            </li>
+            
+          </ul>
+          
+          <ul class="bee2" data-aos-easing="linear" data-aos="fade-left" data-aos-duration="1000">
+            <li class="bee2_left">
+              <div class="beeimg"><img src="img/character/bh2.png"></div>
+              <div class="bee1_text">
+                <p>Bumblebee</p>
+                <img class="ch1" src="img/chara_1.svg">
+                <img class="ch3" src="img/bee2.png">
+              </div>
+            </li>
+
+
+            <li class="bee2_right">
+              <div class="beeimg"><img src="img/character/bh1.png"></div>
+              <div class="beeimg"><img src="img/character/bh3.png"></div>
+            </li>
+            
+          </ul>
+
+          <ul class="bee3" data-aos-easing="linear" data-aos="fade-right" data-aos-duration="1000">
+            <li class="bee3_left">
+              <div class="beeimg"><img src="img/character/bj1.png"></div>
+              <div class="beeimg more2"><img src="img/character/bj3.png"></div>
+            </li>
+
+
+            <li class="bee3_right">
+              <div class="beeimg"><img src="img/character/bj2.png"></div>
+              <div class="bee3_text">
+                <p>Honeybee</p>
+                <img class="ch1" src="img/chara_1.svg">
+                <img class="ch4" src="img/chara_3.svg">
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+
+        <span></span>
+      </article>
+
+      <article class="honey_hiden">
+        <div class="hiden_top" >
+          <img src="img/chara_4.svg" data-aos-easing="linear" data-aos="fade-down" data-aos-duration="900" >
+          <h3 data-aos-easing="linear" data-aos="fade-down" data-aos-duration="1100">Preparing for a new kingdom of bees.</h3>
+        </div>
+
+        <div class="hiden_bottom" data-aos-easing="linear" data-aos="fade-down" data-aos-duration="1200">
+          <ul>
+            <li class="hi-1">
+              <img src="img/character/hh1.png">
+              <img src="img/character/hh2.png">
+              <img src="img/character/hh3.png">
+            </li>
+            <li class="hi-1">
+              <img src="img/character/hh4.png">
+              <img src="img/character/hh5.png">
+              <img src="img/character/hh6.png">
+            </li>
+            <li class="hi-1">
+              <img src="img/character/hh7.png">
+              <img src="img/character/hh8.png">
+              <img src="img/character/hh9.png">
+            </li>
+            <li class="hi-1">
+              <img src="img/character/hh10.png">
+              <img src="img/character/hh11.png">
+              <img src="img/character/hh12.png">
+            </li>
+          </ul>
+        </div>
+
+        <div class="hiden_box" data-aos-easing="linear" data-aos="fade-down" data-aos-duration="1200">
+          <h3>Blue-banded bee, Yellow-faced bee,<br> White-banded digger bee, Purple-banded sunflower bee</h3>
+        </div>
+
+        
+      </article>
+      
+      <article class="honey_botoom">
+        <img src="img/honey-hr-white.png">
+      </article>
+      
+    </section>
+
+    <!-- milestones -->
+    <section id="milestones">
+      <article>
+        <div class="svg-m" data-aos-easing="linear" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2500">
+          <img src="img/라인드로잉.svg">
+        </div>
+        
+        <div class="m_title">
+          <h2 data-aos="fade-down" data-aos-duration="1000">Milestones</h2>
+        </div>
+
+        <div class="m_detail">
+          <ul class="year1" data-aos-easing="linear" data-aos="fade-left" data-aos-duration="1000">
+            <li class="m_hex">
+              <img src="img/Polygon1.svg" class="hexagon1"></img>
+              <img src="img/Polygon2.svg" class="hexagon2"></img>
+              <img class="hon1" src="img/q5.png">
+            </li>
+            <li class="m_text">
+              <div class="m_top">
+                <img src="img/Group.svg" class="hexagon3"></img>
+                <h2>2022</h2>
+              </div>
+              <span class="m_line"></span>
+              <div class="m_bottom">
+                <p>
+                  Q4 KOB (Kingdom of Bee) Team Composition,<br> Worldbuilding, and Character Design
+                </p>
+              </div>
+            </li>
+          </ul>
+          <ul class="year2" data-aos-easing="linear" data-aos="fade-right" data-aos-duration="1000">
+            <li class="m_hex">
+              <img class="hon1"  src="img/q1.png">
+              <img src="img/Polygon1.svg" class="hexagon1"></img>
+              <img src="img/Polygon2.svg" class="hexagon2"></img>
+            </li>
+            <li class="m_text">
+              <div class="m_top">
+                <p>
+                  Q1 Launch of NFT Marketplace, Commencement of<br>KOB (Kingdom of Bee) Social Media<br>Release of NFT Characters
+                </p>
+                <p>
+                  Q2 Release of 2nd Set of KOB NFT Characters, Planning of<br>
+                  KOB Events and Global Marketing<br>
+                  Initiation of Global Promotional Marketing
+                </p>
+                <p>
+                  Q3 : Planning of NFT Art Contest<br>
+                  Expansion of 2nd Worldbuilding Phase<br>
+                  Release of 1st Set of 2nd World NFT Characters 
+                </p>
+                <p>
+                  Release of 2nd Set of NFT Characters<br>
+                  Commencement of Metaverse Development
+                </p>
+                
+              </div>
+              <span class="m_line"></span>
+              <div class="m_bottom">
+                <img src="img/Group.svg" class="hexagon3"></img>
+                <h2>2023</h2>
+              </div>
+            </li>
+          </ul>
+          <ul class="year3" data-aos-easing="linear" data-aos="fade-left" data-aos-duration="1000">
+            <li class="m_hex">
+              <img class="hon1" src="img/q1.png">
+              <img src="img/Polygon1.svg" class="hexagon1"></img>
+            </li>
+            <li class="m_text">
+              <div class="m_top">
+                <img src="img/Group.svg" class="hexagon3"></img>
+                <h2>2024</h2>
+              </div>
+              <span class="m_line"></span>
+              <div class="m_bottom">
+                <p>
+                  Q1 Introduction of the Metaverse Worldbuilding and<br>Commencement of Worldbuilding Game Development
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="m_under">
+          <img src="img/honey_to.svg">
+        </div>
+      </article>
+    </section>
+    
+    <!-- contact -->
+    <section id="contact">
+      
+      <div class="contact_bg">
+        <img src="img/cont_bg.jpg">
+      </div>
+      <div class="cont-title">
+        <h2>Contact</h2>
+      </div>
+      <div class="cont-form">
+        <img src="img/cont_1.svg">
+        <form method="post" onsubmit="return validate();">
+          <input type="text" id="email" placeholder="Email" required>
+          <input class="subm" type="submit" value="SUBMIT" >
+      </form>
+      </div>
+    </section>
   </main>
   
   <footer>
+    <div class="footer_wrap container">
+      <div class="footer_bg">
+      </div>
+      <div class="footer_content">
+        <div class="footer_cont_left">
+          <div class="f_cont_left_logo"><a href="#home"><img src="img/KOB logo w.png" alt="f_logo"></a></div>
+
+          <div class="f_cont_left_info">
+            <h5>KOB Inc.</h5>
+            <p>address : </p>
+            <p>representative : </p>
+            <!-- <p><span>고객센터 운영시간</span> : (월~금 10am~5pm . 점심12~2pm)</p> -->
+          </div>
+        </div>
+
+
+        <div class="footer_cont_right">
+          <a href="#" class="kakao"><i class="xi-kakaotalk xi-x"></i></a>
+          <a href="#" class="tele"><i class="xi-telegram xi-x"></i></a>
+          <a href="#" class="twitter"><i class="xi-twitter xi-x"></i></a>
+          <a href="#" class="tele"><i class="xi-instagram xi-x"></i></a>
+
+
+        </div>
+      </div><!-- footer_content -->
+    </div><!-- footer_wrap -->
 
   </footer>
 
   <script>
     AOS.init();
   </script>
+
 
 </body>
 

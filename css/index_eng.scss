@@ -13,5 +13,75 @@
 /*header*/
 
 /* main */
+main {
+  #characters {
+    .honey_ch {
+      .c_detail {
+        .bee1 {
+          .bee1_right {
+            .bee1_text {
+              p{
+                transform: translate(0rem, -9rem);
+              }
+            }
+          }
+        }
+        .bee2 {
+          .bee2_left {
+            .bee1_text {
+              p{
+                transform: translate(0rem, -9rem);
+              }
+            }
+          }
+        }
+      }
+    }
+    .honey_hiden {
+      .hiden_box {
+        h3{
+          width: 60%;
+        }
+      }
+    }
+  }
+  #milestones {
+    article {
+      .m_detail {
+        .year2 {
+          .m_text{
+            .m_line{
+              left: 52.3rem;
+            }
+          }
+          .m_hex {
+            .hexagon1{
+              transform: translate(72rem, 34rem);
+            }
+            .hexagon2{
+              transform: translate(66.5rem, 22rem);
+            }
+          }
+        }
+        .year3 {
+          .m_text {
+            .m_line{
+              top: 4rem;
+              left: 56.5rem;
+            }
+          }
+          .m_hex {
+            .hon1{
+              transform: translate(40rem, 22rem);
+            }
+            .hexagon1{
+              transform: translate(21rem, 15rem);
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 /*footer*/
