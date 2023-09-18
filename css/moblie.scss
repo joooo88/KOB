@@ -709,10 +709,14 @@
                 }
             }
         }
+        
         #contact {
             .cont-form {
                 form{
                     width: 85%;
+                    #email{
+                        width: 80%;
+                    }
                 }
             }
         }
@@ -722,7 +726,6 @@
             .footer_content {
                 .footer_cont_left {
                     .f_cont_left_logo{
-                        width: 100%;
                     }
                 }
             }
@@ -769,7 +772,19 @@
             }
         }
         #characters {
+            height: 380vh;
+            .honey_bg {
+                .honey_b_bg{
+                    height: 380vh;
+                }
+            }
             .honey_ch {
+                .c_title {
+                    h3{
+                        font-size: 1rem;
+                        line-height: 2;
+                    }
+                }
                 .c_detail {
                     .bee1 {
                         .bee1_left {
@@ -841,6 +856,7 @@
                         }
                     }
                     .bee3 {
+                        padding: 0 0 0 18rem;
                         .bee3_left {
                             .beeimg{
                                 width: 160px;
@@ -857,8 +873,10 @@
                             .beeimg{
                                 width: 160px;
                                 height: 140px;
+                                transform: translate(-10rem, 10rem);
                                 img{
                                     width: 110px;
+                                    
                                 }
                             }
                             
@@ -878,10 +896,251 @@
                         }
                     }
                 }
+                 
+            }
+            .honey_hiden{
+                .hiden_top{
+                    h3{
+                        font-size: 1.4rem;
+                    }
+                }
+                .hiden_bottom {
+                    ul {
+                        .hi-1 {
+                            img{
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
+                .hiden_box {
+                    h3{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            .honey_botoom{
+                bottom: -2rem;
+            }
+        }
+        #milestones {
+            article {
+                .m_detail {
+                    .year1 {
+                        .m_text {
+                            .m_top {
+                                img{
+                                    width: 50%;
+                                }
+                            }
+                            .m_bottom{
+                                p{
+                                    font-size: 0.9rem;
+                                }
+                            }
+                        }
+                        .m_hex {
+                            .hon1{
+                                transform: translate(-6rem, 14rem);
+                            }
+                            .hexagon1{
+                                width: 100px;
+                                transform: translate(1rem, 8rem);
+                            }
+                            .hexagon2{
+                                width: 100px;
+                                transform: translate(-2rem, 2rem);
+                            }
+                        }
+                    }
+                    .year2 {
+                        .m_text {
+                            .m_top {
+                                p{
+                                    font-size: 0.9rem;
+                                }
+                                
+                            }
+                            .m_bottom{
+                                img{
+                                    width: 50%;
+                                }
+                            }
+                        }
+                        .m_hex {
+                            .hon1{
+                                transform: translate(3rem, 28rem);
+                            }
+                            .hexagon1{
+                                width: 100px;
+                                transform: translate(20rem, -4rem);
+                            }
+                            .hexagon2{
+                                width: 100px;
+                                transform: translate(10rem, 2rem);
+                            }
+                        }
+                    }
+                    .year3 {
+                        .m_text {
+                            .m_top {
+                                img{
+                                    width: 50%;
+                                }
+                            }
+                            .m_bottom{
+                                p{
+                                    font-size: 0.9rem;
+                                }
+                            }
+                        }
+                        .m_hex {
+                            .hexagon1{
+                                width: 100px;
+                                transform: translate(-1rem, 2rem);
+                            }
+                            .hon1{
+                                transform: translate(21rem, 5rem);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    footer {
+        .footer_wrap {
+            .footer_content {
+                .footer_cont_left {
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    .f_cont_left_info {
+                        h5{
+                            white-space: nowrap;
+                        }
+                    }
+                }
             }
         }
     }
 }
 
 /* 모바일4 아이폰 375px */
-@include iphone{}
+@include iphone{
+    main {
+        #home {
+            article {
+                .home_logo{
+                    width: 70%;
+                }
+                .home_txt{
+                    h1{
+                        font-size: 2rem;
+                    }
+                    h2{
+                        font-size: 0.8rem;
+                    }
+                    .home_btn{
+                        display: flex;
+                        gap: 1rem;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        #story {
+            article{
+                padding: 0px 2rem;
+                .story_text {
+                    h3{
+                        font-size: 0.9rem;
+                    }
+                }
+                .story_c {
+                    ul {
+                        .img_fix {
+                            img{
+                                width: 200px;
+                                right: 4.5rem;
+                                top: 32rem;
+                            }
+                            span{
+                                right: -1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #characters {
+            .honey_ch {
+                .c_detail {
+                    .bee1 {
+                        .bee1_right {
+                            .bee1_text {
+                                .ch1{
+                                    width: 100px;
+                                    transform: translate(4rem, -8rem);
+                                }
+                                .ch2{
+                                    transform: translate(0rem, -2rem);
+                                }
+                                p{
+                                    transform: translate(1.5rem, -6.5rem);
+                                }
+                            }
+                        }
+                    }
+                    .bee3{
+                        padding: 0 0 0 17rem;
+                    }
+                }
+            }
+        }
+        #milestones {
+            article {
+                .m_detail {
+                    .year1 {
+                        
+                        .m_hex {
+                            .hexagon1{
+                                transform: translate(-0.5rem, 8rem);
+                            }
+                            .hexagon2{
+                                transform: translate(-3rem, 2rem);
+                            }
+                        }
+                    }
+                    .year2 {
+                        .m_text{
+                            p{
+                                margin: 0 1rem;
+                            }
+                        }
+                        .m_hex {
+                            .hexagon1{
+                                transform: translate(18rem, -3.5rem);
+                            }
+                            .hexagon2{
+                                transform: translate(8rem, 2.5rem);
+                            }
+                        }
+                    }
+                    .year3 {
+                        .m_hex {
+                            .hexagon1{
+                                transform: translate(-2.5rem, 2rem);
+                            }
+                            .hon1{
+                                transform: translate(19rem, 5rem);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

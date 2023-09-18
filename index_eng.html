@@ -127,12 +127,15 @@
     <script type="text/javascript">
       $(function () {
         $(".m_menu_button").click(function () {
-          $(".m_menu").animate({ height: "toggle" }, 250);
+          $(".m_menu").animate({ width: "toggle" }, 250); // 메뉴버튼 클릭시 메뉴를 숨깁니다.
         });
       });
 
-    </script>
+      $(".scroll").click(function () {
+      $(".m_menu").hide(); // "id" 링크를 클릭할 때 .m_menu를 숨깁니다.
+    });
 
+    </script>
     </div>
 
   </header>
@@ -453,7 +456,7 @@
   </main>
   
   <footer>
-    <div class="footer_wrap container">
+    <div class="footer_wrap">
       <div class="footer_bg">
       </div>
       <div class="footer_content">
@@ -481,7 +484,6 @@
     </div><!-- footer_wrap -->
 
   </footer>
-
   <script>
     AOS.init();
   </script>

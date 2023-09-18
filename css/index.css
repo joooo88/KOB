@@ -962,24 +962,23 @@ footer .footer_wrap .footer_content {
   z-index: 10;
 }
 footer .footer_wrap .footer_content .footer_cont_left {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 footer .footer_wrap .footer_content .footer_cont_left .f_cont_left_logo {
   width: 30%;
-  margin-right: 12%;
 }
 footer .footer_wrap .footer_content .footer_cont_left .f_cont_left_logo a {
   width: 100%;
   display: inline-block;
 }
 footer .footer_wrap .footer_content .footer_cont_left .f_cont_left_logo a img {
-  max-width: 100%;
+  width: 100px;
 }
 footer .footer_wrap .footer_content .footer_cont_left .f_cont_left_info {
-  width: 100%;
+  width: 70%;
   margin-bottom: 0 !important;
 }
 footer .footer_wrap .footer_content .footer_cont_left .f_cont_left_info h5 {

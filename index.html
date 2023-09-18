@@ -125,9 +125,13 @@
     <script type="text/javascript">
       $(function () {
         $(".m_menu_button").click(function () {
-          $(".m_menu").animate({ height: "toggle" }, 250);
+          $(".m_menu").animate({ width: "toggle" }, 250); // 메뉴버튼 클릭시 메뉴를 숨깁니다.
         });
       });
+
+      $(".scroll").click(function () {
+      $(".m_menu").hide(); // "id" 링크를 클릭할 때 .m_menu를 숨깁니다.
+    });
 
     </script>
 
@@ -361,7 +365,7 @@
             <li class="m_text">
               <div class="m_top">
                 <img src="img/Group.svg" class="hexagon3"></img>
-                <h2>2022</h2>
+                <h2>2023</h2>
               </div>
               <span class="m_line"></span>
               <div class="m_bottom">
@@ -401,7 +405,7 @@
               <span class="m_line"></span>
               <div class="m_bottom">
                 <img src="img/Group.svg" class="hexagon3"></img>
-                <h2>2023</h2>
+                <h2>2024</h2>
               </div>
             </li>
           </ul>
@@ -413,7 +417,7 @@
             <li class="m_text">
               <div class="m_top">
                 <img src="img/Group.svg" class="hexagon3"></img>
-                <h2>2024</h2>
+                <h2>2025</h2>
               </div>
               <span class="m_line"></span>
               <div class="m_bottom">
@@ -479,7 +483,7 @@
     </div><!-- footer_wrap -->
 
   </footer>
-
+  
   <script>
     AOS.init();
   </script>

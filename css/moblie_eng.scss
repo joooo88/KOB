@@ -1,25 +1,176 @@
 @import "./mixin";
 
 /*데탑 1440px*/
-@include desktop{}
+@include desktop{
+    main{
+        #story{
+            article{
+                padding: 0 8rem;
+                .story_text{
+                    padding-top: 8rem;
+                }
+            }
+        }
+        #characters {
+            .honey_botoom{
+                bottom: -5rem;
+            }
+        }
+    }
+}
 
 /*노트북 1024px*/
-@include laptop{}
+@include laptop{
+    main{
+        #characters {
+            .honey_botoom{
+                bottom: -7rem;
+            }
+        }
+    }
+}
 
 /*패드 991px*/
 @include tablet{}
 
 /*아이패드 768px*/
-@include itablet{}
+@include itablet{
+    main {
+        #story {
+            article{
+                padding: 0 3rem;
+            }
+        }
+        #characters {
+            .honey_hiden {
+                .hiden_box {
+                    h3{
+                        width: 80%;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .honey_botoom{
+                bottom: -3rem;
+            }
+        }
+        #milestones {
+            article {
+                .m_detail {
+                    .year2 {
+                        .m_hex {
+                            .hexagon2{
+                                transform: translate(23.5rem, -8rem);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* 모바일 767px*/
-@include mobile{}
+@include mobile{
+    main{
+        #story {
+            article {
+                .story_text {
+                    padding-top: 5rem;
+                    h1{
+                        padding-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* 모바일2 576px */
-@include mobile2{}
+@include mobile2{
+    main {
+        #characters {
+            .honey_hiden {
+                .hiden_top{
+                    h3{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* 모바일3 갤석시 425px */
-@include galaxy{}
+@include galaxy{
+    main {
+        #story{
+            article {
+                padding: 0 1rem;
+                .story_text{
+                    padding-top: 3rem;
+                }
+            }
+        }
+        #characters {
+            .honey_ch {
+                .c_detail {
+                    .bee1 {
+                        .bee1_right {
+                            .bee1_text {
+                                p{
+                                    transform: translate(0.5rem, -7rem);
+                                }
+                            }
+                        }
+                    }
+                    .bee2 {
+                        .bee2_left {
+                            .bee1_text {
+                                p{
+                                    transform: translate(1.5rem, -8rem);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .honey_botoom{
+                bottom: -2rem;
+            }
+        }
+        #milestones {
+            article {
+                .m_detail {
+                    ul {
+                        .m_text {
+                            .m_bottom{
+                                p{
+                                    padding: 0 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* 모바일4 아이폰 375px */
-@include iphone{}
+@include iphone{
+    main {
+        #characters {
+            .honey_hiden {
+                .hiden_top {
+                    h3{
+                        font-size: 1rem;
+                    }
+                }
+                .hiden_box {
+                    h3{font-size: 0.8rem;}
+                }
+            }
+        }
+    }
+}
