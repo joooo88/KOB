@@ -1,23 +1,19 @@
 @font-face {
-    font-family: "corp";
-    src: url("/font/corp-round-v1-2.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  main{
-    font-family: "corp";
-  }
-  h1, a {
-    font-family: "yg-jalnan";
-  }
-  footer{
-    font-family: "corp";
-  }
-  
-  main #characters .honey_ch .c_detail .bee1 .bee1_right .bee1_text p {
-    transform: translate(-1rem, -10rem);
-  }
-  main #characters .honey_ch .c_detail .bee2 .bee2_left .bee1_text p {
-    transform: translate(3rem, -9rem);
-  }/*# sourceMappingURL=jp.css.map */
+  font-family: "corp";
+  src: url("../font/corp-round-v1-2.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "corp";
+}
+h1, a {
+  font-family: "yg-jalnan";
+}
+
+main #characters .honey_ch .c_detail .bee1 .bee1_right .bee1_text p {
+  transform: translate(-1rem, -10rem);
+}
+main #characters .honey_ch .c_detail .bee2 .bee2_left .bee1_text p {
+  transform: translate(3rem, -9rem);
+}/*# sourceMappingURL=jp.css.map */
