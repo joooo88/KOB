@@ -2,12 +2,7 @@
    v2.0-modified | 20110126
    License: none (public domain)
 */
-@font-face {
-    font-family: "corp";
-    src: url("/font/corp-round-v1-2.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
+
 
 /* make sure to set some focus styles for accessibility */
 :focus {
@@ -355,3 +350,10 @@ a:hover{
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "corp";
+    src: url("/font/corp-round-v1-2.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
